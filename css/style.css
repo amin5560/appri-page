@@ -37,7 +37,7 @@ body {
 *:focus {
   outline: none;
 }
-.img {
+img {
   border: 0;
   width: auto;
   height: auto;
@@ -95,7 +95,7 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  color: #313131;
+  color: 393542;
   margin-top: 0px;
   font-style: normal;
   font-weight: 400;
@@ -282,7 +282,77 @@ label {
   color: #fff;
 }
 /* header */
+.header-area {
+  padding: 40px 0;
+}
+.transparent-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 
+.main-menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+.main-menu ul li a {
+  color: #cfcfd8;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 20px 0;
+  display: block;
+  line-height: 1;
+  font-family: roboto;
+}
+.header-btn a {
+  background: #6c5edf;
+  padding: 20px 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.main-menu ul li ul.submenu {
+  position: absolute;
+  width: 200px;
+  background: #fff;
+  top: 110%;
+  padding: 30px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.main-menu ul li:hover > ul.submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+.main-menu ul li ul.submenu li {
+  margin: 0;
+  display: block;
+  margin-bottom: 20px;
+}
+.main-menu ul li ul.submenu li:hover > a {
+  color: #ff62a3;
+}
+
+.main-menu ul li ul.submenu li:last-child {
+  margin-bottom: 0;
+}
+.main-menu ul li ul.submenu li a {
+  padding: 0;
+  color: #90909a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-btn a:hover {
+  background: #ff62a3;
+  color: #fff;
+}
 /* scrollUp */
 #scrollUp {
   background: #7dba2f;
